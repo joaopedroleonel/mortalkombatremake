@@ -1,0 +1,79 @@
+.navbar-brand {
+	font-family: Koulen;
+	background-color: #151B26;
+}
+
+.navbar {
+	background-color: #151B26;
+	position: fixed;
+} 
+
+button {
+	color: darkorange;
+}
+
+img {
+	height: auto;
+}
+
+.p {
+	text-align: center;
+	font-family: Koulen;
+	font-size: 70px;
+	color: whitesmoke;
+	background-color: #151B26;
+}
+
+.p_personagem {
+	text-align: center;
+	font-family: Koulen;
+	font-size: 30px;
+	color: whitesmoke;
+	background-color: #151B26;
+}
+
+.w-1002 {
+	margin-bottom: 20px;
+}
+
+.card {
+	margin-bottom: 20px;
+	max-width: 350px;
+}
+.row {
+	padding: 10px;
+}
+@media only screen and  (max-width: 720px) {
+	.p {
+		font-size: 30px;
+	}
+}
+
+@media only screen and  (max-width: 566px) {
+	.sumiu {
+		visibility: hidden;
+	}
+	.cima {
+		margin-top: -40px;
+	}
+	#vai {
+		display: flow-root;
+		padding-left: 30px;
+	}
+	.card {
+		max-width: 200px;
+	}
+}
+
+@media only screen and  (max-width: 1422px) {
+	.card {
+		max-width: 250px;
+	}
+}
+
+@media only screen and  (min-width: 566px) {
+	#vai {
+		display: flex;
+		padding-left: 30px;
+	}
+}

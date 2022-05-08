@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Koulen&display=swap" rel="stylesheet">
+    <title>Mortal Kombat Remake</title>
+    <link rel="icon" type="imagem/png" href="logo.png" />
+</head>
+<nav class="navbar fixed-top navbar-dark">
+  <div id="cor" class="container-fluid">
+    <a class="navbar-brand sumiu">Mortal Kombat Personagens</a>
+    <form class="d-flex cima">
+      <input id="filtro-nome" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+    </form>
+  </div>
+</nav>
+<img src="mortal.png" class="d-block w-100" alt="...">
+    <p class="p">Personagens:</p>
+<table id="lista">
+<thead>
+</thead>
+<tbody id="vai">
+    <tr>
+        <td>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="s.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p id="lista" class="card-text p_personagem">Scorpion:</p>
+                <p class="card-text">Scorpion é um ninja espectro e um dos principais personagens de jogos da franquia Mortal Kombat. 
+                  Seu nome real é Hanzo Hasashi em sua forma humana.</p>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="sub.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p id="lista" class="card-text p_personagem">Sub-Zero:</p>
+                 <p class="card-text">Sub-Zero é o pseudônimo de dois personagens da franquia de jogos eletrônic, um dos quais estava entre os personagens do primeiro título.</p>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="r2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p id="lista" class="card-text p_personagem">Raiden:</p>
+                <p class="card-text">Raiden é o Deus do Trovão e protetor do reino da Terra, com frequência liderando as forças do bem contra o mal e servindo de mentor para os personagens terráqueos.</p>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="l.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p id="lista" class="card-text p_personagem">Liu Kang:</p>
+                 <p class="card-text"> Liu Kang é um monge Shaolin que entra o torneio Mortal Kombat para salvar a Terra de uma possível invasão. Após sua vitória, ele se torna protagonista dos primeiros jogos.</p>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                <img src="k.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p id="lista" class="card-text p_personagem">Kano:</p>
+                <p class="card-text"> ele é um mercenário ciborgue que faz parte de um cartel internacional conhecido por Dragão Negro, e tem uma rivalidade com os militares Sonya Blade e Jax Briggs.</p>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+</tbody>
+</div>
+
+
+<script type="text/javascript">
+
+window.onload=function(){
+
+//para nomes
+var filtro = document.getElementById('filtro-nome');
+var tabela = document.getElementById('lista');
+filtro.onkeyup = function() {
+    var nomeFiltro = filtro.value;
+    for (var i = 1; i < tabela.rows.length; i++) {
+        var conteudoCelula = tabela.rows[i].cells[0].innerText;
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        tabela.rows[i].style.display = corresponde ? '' : 'none';
+    }
+};
+
+//para email
+var filtro2 = document.getElementById('filtro-email');
+var tabela2 = document.getElementById('lista');
+filtro2.onkeyup = function() {
+    var nomeFiltro = filtro2.value;
+    for (var i = 1; i < tabela2.rows.length; i++) {
+        var conteudoCelula = tabela2.rows[i].cells[0].innerText;
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        tabela2.rows[i].style.display = corresponde ? '' : 'none';
+    }
+};
+
+}
+
+</script>
+
+
